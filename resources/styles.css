@@ -1,0 +1,21 @@
+#date {
+  x: 50%;
+  y: 35%;
+  fill: rgb(224,224,224);
+  font-size: 28;
+  font-family: System-Light;
+  font-weight: 100;
+  text-anchor: middle;
+  text-length: 11;
+}
+
+#time {
+  x: 50%;
+  y: 58%;
+  fill: white;
+  font-size: 90;
+  font-family: System-Light;
+  font-weight: 100;
+  text-anchor: middle;
+  text-length: 4;
+}

@@ -1,0 +1,4 @@
+<svg viewport-fill="black">
+  <text id="date">00 Jan 0000</text>
+  <text id="time">0000</text>
+</svg>
