@@ -11,7 +11,7 @@ export class ChargeSensor {
     if (chargeLevel == 100) {
       this.label.text = "9"
     } else {
-      this.label.text = (chargeLevel / 10).toString()
+      this.label.text = Math.floor(chargeLevel / 10).toString()
     }
   }
 
