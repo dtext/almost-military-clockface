@@ -33,6 +33,13 @@
   text-anchor: end;
 }
 
+#step-counter {
+  x: 50%;
+  y: 93%;
+  text-anchor: middle;
+  text-length: 5;
+}
+
 .metrics {
   fill: rgb(224,224,224);
   font-size: 20;

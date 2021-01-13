@@ -3,6 +3,7 @@ import clock from "clock";
 import { AlmostMilitaryClock, LOCALE_DE } from "./clock";
 import { HeartRateMonitor } from "./pulse";
 import { ChargeSensor } from "./charge";
+import { StepSensor } from "./steps";
 
 
 const timeLabel = document.getElementById("time")
@@ -15,7 +16,16 @@ const myClock = new AlmostMilitaryClock(
 )
 
 clock.granularity = "minutes";
-clock.addEventListener("tick", myClock.updateTime)
+
+const stepLabel = document.getElementById("step-counter")
+console.log(JSON.stringify(stepLabel))
+const stepSensor = new StepSensor(stepLabel)
+document.addEventListener("click", stepSensor.updateSteps)
+
+clock.addEventListener("tick", (event) => {
+  myClock.updateTime(event)
+  stepSensor.updateSteps()
+})
 
 const heartRateLabel = document.getElementById("heart-rate")
 const hrm = new HeartRateMonitor(heartRateLabel)
