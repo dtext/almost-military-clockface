@@ -19,3 +19,14 @@
   text-anchor: middle;
   text-length: 4;
 }
+
+#heart-rate {
+  x: 10%;
+  y: 90%;
+}
+
+.metrics {
+  fill: rgb(224,224,224);
+  font-size: 20;
+  font-family: System-Light;
+}
