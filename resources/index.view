@@ -1,5 +1,6 @@
 <svg viewport-fill="black">
   <text id="date">00 Jan 0000</text>
   <text id="time">0000</text>
-  <text id="heart-rate" class="metrics">...</text>
+  <text id="heart-rate" class="metrics"></text>
+  <text id="charge-level" class="metrics">a</text>
 </svg>

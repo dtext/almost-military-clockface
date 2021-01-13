@@ -23,6 +23,14 @@
 #heart-rate {
   x: 10%;
   y: 90%;
+  text-length: 3;
+}
+
+#charge-level {
+  x: 90%;
+  y: 90%;
+  text-length: 3;
+  text-anchor: end;
 }
 
 .metrics {
