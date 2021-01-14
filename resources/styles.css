@@ -1,6 +1,4 @@
 #date {
-  x: 50%;
-  y: 35%;
   fill: rgb(224,224,224);
   font-size: 28;
   font-family: System-Light;
@@ -10,8 +8,6 @@
 }
 
 #time {
-  x: 50%;
-  y: 58%;
   fill: white;
   font-size: 90;
   font-family: System-Light;
@@ -21,21 +17,15 @@
 }
 
 #heart-rate {
-  x: 10%;
-  y: 90%;
   text-length: 3;
 }
 
 #charge-level {
-  x: 90%;
-  y: 90%;
   text-length: 3;
   text-anchor: end;
 }
 
 #step-counter {
-  x: 50%;
-  y: 93%;
   text-anchor: middle;
   text-length: 5;
 }
