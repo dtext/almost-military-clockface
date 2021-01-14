@@ -2,7 +2,7 @@
   fill: rgb(224,224,224);
   font-size: 28;
   font-family: System-Light;
-  font-weight: 100;
+  font-weight: light;
   text-anchor: middle;
   text-length: 11;
 }
@@ -11,27 +11,27 @@
   fill: white;
   font-size: 90;
   font-family: System-Light;
-  font-weight: 100;
+  font-weight: light;
   text-anchor: middle;
   text-length: 4;
 }
 
 #heart-rate {
+  fill: rgb(236,203,203);
   text-length: 3;
 }
 
 #charge-level {
-  text-length: 3;
-  text-anchor: end;
+  fill: rgb(201,244,255);
+  text-length: 1;
 }
 
 #step-counter {
-  text-anchor: middle;
+  fill: rgb(255,245,210);
   text-length: 5;
 }
 
 .metrics {
-  fill: rgb(224,224,224);
   font-size: 20;
-  font-family: System-Light;
+  font-family: System-Regular;
 }
