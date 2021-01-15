@@ -2,7 +2,7 @@
   <text id="date" x="50%" y="35%">00 Jan 0000</text>
   <text id="time" x="50%" y="58%">0000</text>
 
-  <image x="7%" y="90%-17" width="20" height="20" href="icons/heart.png"/>
+  <image opacity=".75" x="7%" y="90%-17" width="20" height="20" href="icons/heart.png"/>
   <text id="heart-rate" x="$" y="90%" class="metrics">000</text>
   
   <text id="charge-level" x="83%" y="90%" class="metrics">0</text>
