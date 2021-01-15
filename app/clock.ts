@@ -58,7 +58,7 @@ export class AlmostMilitaryClock {
     this.dateLabel.text = this.getDateString(
       tickEvent.date.getDate(),
       tickEvent.date.getMonth(),
-      tickEvent.date.getHours(),
+      tickEvent.date.getFullYear(),
     )
   }
 }
