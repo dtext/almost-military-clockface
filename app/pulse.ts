@@ -16,6 +16,7 @@ function padWithSpace(heartRate: number) {
 export class HeartRateMonitor {
 
   private hrSensor: HeartRateSensor = null
+  private body: BodyPresenceSensor = null
 
   constructor (
     private heartRateLabel: Element,
@@ -26,18 +27,28 @@ export class HeartRateMonitor {
       
       // run sensor only when on body
       if (BodyPresenceSensor && appbit.permissions.granted("access_activity")) {
-        const body = new BodyPresenceSensor()
-        body.addEventListener("reading", () => {
-          body.present ? this.startMonitoring() : this.stopMonitoring();
+        this.body = new BodyPresenceSensor()
+        this.body.addEventListener("reading", () => {
+          this.body.present ? this.startMonitoring() : this.stopMonitoring();
         })
-        body.start()
+        this.body.start()
       }
 
       // run sensor only when screen is on
       display.addEventListener("change", () => {
-        display.on ? this.startMonitoring() : this.stopMonitoring();
+        display.on ? this.turnOn() : this.turnOff();
       });
     }
+  }
+
+  public turnOn = () => {
+    this.body?.stop()
+    this.startMonitoring()
+  }
+
+  public turnOff = () => {
+    this.body?.start()
+    this.stopMonitoring()
   }
 
   public startMonitoring = () => {
@@ -45,7 +56,7 @@ export class HeartRateMonitor {
   }
 
   private stopMonitoring = () => {
-    this.hrSensor.stop();
+    this.hrSensor?.stop();
     this.heartRateLabel.text = ""
   }
 

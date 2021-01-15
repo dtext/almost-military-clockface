@@ -24,7 +24,7 @@ clock.addEventListener("tick", (event) => {
 
 const heartRateLabel = document.getElementById("heart-rate")
 const hrm = new HeartRateMonitor(heartRateLabel)
-hrm.startMonitoring()
+hrm.turnOn()
 
 const chargeLabel = document.getElementById("charge-level")
 new ChargeSensor(chargeLabel).start()
