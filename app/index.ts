@@ -1,6 +1,6 @@
 import document from "document";
 import clock from "clock";
-import { AlmostMilitaryClock, LOCALE_DE } from "./clock";
+import { AlmostMilitaryClock } from "./clock";
 import { HeartRateMonitor } from "./pulse";
 import { ChargeSensor } from "./charge";
 import { StepSensor } from "./steps";
@@ -9,11 +9,7 @@ import { StepSensor } from "./steps";
 const timeLabel = document.getElementById("time")
 const dateLabel = document.getElementById("date")
 
-const myClock = new AlmostMilitaryClock(
-  timeLabel,
-  dateLabel,
-  LOCALE_DE
-)
+const myClock = new AlmostMilitaryClock(timeLabel, dateLabel)
 
 clock.granularity = "minutes";
 

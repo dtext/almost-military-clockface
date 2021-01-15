@@ -1,0 +1,56 @@
+msgid "monday"
+msgstr "Lundi"
+
+msgid "tuesday"
+msgstr "Mardi"
+
+msgid "wednesday"
+msgstr "Mercredi"
+
+msgid "thursday"
+msgstr "Jeudi"
+
+msgid "friday"
+msgstr "Vendredi"
+
+msgid "saturday"
+msgstr "Samedi"
+
+msgid "sunday"
+msgstr "Dimanche"
+
+msgid "jan"
+msgstr "Jan"
+
+msgid "feb"
+msgstr "Fev"
+
+msgid "mar"
+msgstr "Mar"
+
+msgid "apr"
+msgstr "Avr"
+
+msgid "may"
+msgstr "Mai"
+
+msgid "jun"
+msgstr "Jun"
+
+msgid "jul"
+msgstr "Jul"
+
+msgid "aug"
+msgstr "Aut"
+
+msgid "sep"
+msgstr "Sep"
+
+msgid "oct"
+msgstr "Oct"
+
+msgid "nov"
+msgstr "Nov"
+
+msgid "dec"
+msgstr "Dec"
