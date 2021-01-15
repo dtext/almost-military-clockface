@@ -18,9 +18,7 @@ const myClock = new AlmostMilitaryClock(
 clock.granularity = "minutes";
 
 const stepLabel = document.getElementById("step-counter")
-console.log(JSON.stringify(stepLabel))
 const stepSensor = new StepSensor(stepLabel)
-document.addEventListener("click", stepSensor.updateSteps)
 
 clock.addEventListener("tick", (event) => {
   myClock.updateTime(event)

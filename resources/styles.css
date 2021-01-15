@@ -1,37 +1,36 @@
 #date {
   fill: rgb(224,224,224);
   font-size: 28;
-  font-family: System-Light;
-  font-weight: light;
   text-anchor: middle;
   text-length: 11;
 }
 
 #time {
-  fill: white;
-  font-size: 90;
-  font-family: System-Light;
-  font-weight: light;
+  font-size: 96;
   text-anchor: middle;
   text-length: 4;
 }
 
 #heart-rate {
-  fill: rgb(236,203,203);
   text-length: 3;
 }
 
 #charge-level {
-  fill: rgb(201,244,255);
   text-length: 1;
 }
 
 #step-counter {
-  fill: rgb(255,245,210);
   text-length: 5;
 }
 
+text {
+  font-family: System-Light;
+  font-weight: light;
+  fill: white;
+}
+
 .metrics {
-  font-size: 20;
   font-family: System-Regular;
+  font-size: 20;
+  fill: rgb(207,221,226);
 }
