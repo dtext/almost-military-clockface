@@ -1,27 +1,18 @@
 import { TickEvent } from "clock";
 import { gettext } from "i18n";
 
-const MONTHS = [
-  "jan",
-  "feb",
-  "mar",
-  "apr",
-  "may",
-  "jun",
-  "jul",
-  "aug",
-  "sep",
-  "oct",
-  "nov",
-  "dec"
-]
-
 function padWithZero(num: number) {
   if (num < 10) {
     return `0${num}`.toString()
   } else {
     return num.toString()
   }
+}
+
+function localizedMonthName(num: number) {
+  return gettext([
+    "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"
+  ][num])
 }
 
 export class AlmostMilitaryClock {
@@ -51,7 +42,7 @@ export class AlmostMilitaryClock {
       return "err 0 < month < 12"
     }
     const lastTwoYearDigits = year.toString().slice(-2)
-    const result = `${day} ${gettext(MONTHS[month])} ${lastTwoYearDigits}`.toString()
+    const result = `${day} ${localizedMonthName(month)} ${lastTwoYearDigits}`.toString()
     return result
   }
 
