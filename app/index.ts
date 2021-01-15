@@ -8,8 +8,9 @@ import { StepSensor } from "./steps";
 
 const timeLabel = document.getElementById("time")
 const dateLabel = document.getElementById("date")
+const dayLabel = document.getElementById("day")
 
-const myClock = new AlmostMilitaryClock(timeLabel, dateLabel)
+const myClock = new AlmostMilitaryClock(timeLabel, dateLabel, dayLabel)
 
 clock.granularity = "minutes";
 

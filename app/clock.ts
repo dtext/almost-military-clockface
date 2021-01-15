@@ -15,12 +15,18 @@ function localizedMonthName(num: number) {
   ][num])
 }
 
+function localizedDayName(num: number) {
+  return gettext([
+    "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"
+  ][num - 1])
+}
+
 export class AlmostMilitaryClock {
   constructor(
     private timeLabel: Element,
     private dateLabel: Element,
-  ) {
-  }
+    private dayLabel: Element,
+  ) {}
 
   private getTimeString = (hours: number, minutes: number): string => {
     if (hours < 0 || hours > 23) {
@@ -55,6 +61,9 @@ export class AlmostMilitaryClock {
       tickEvent.date.getDate(),
       tickEvent.date.getMonth(),
       tickEvent.date.getFullYear(),
+    )
+    this.dayLabel.text = localizedDayName(
+      tickEvent.date.getDay(),
     )
   }
 }

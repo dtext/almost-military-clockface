@@ -1,3 +1,10 @@
+#day {
+  font-size: 18;
+  text-length: 10;
+  text-anchor: middle;
+  letter-spacing: 5;
+}
+
 #date {
   fill: rgb(224,224,224);
   font-size: 28;

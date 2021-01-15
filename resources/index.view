@@ -1,4 +1,6 @@
 <svg viewport-fill="black">
+  <text id="day" x="50%" y="8%">Monday</text>
+
   <text id="date" x="50%" y="35%">00 Jan 0000</text>
   <text id="time" x="50%" y="58%">0000</text>
 
