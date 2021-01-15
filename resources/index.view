@@ -8,6 +8,6 @@
   <text id="charge-level" x="83%" y="90%" class="metrics">0</text>
   <image x="$" y="90%-15" width="20" height="20" href="icons/power.png"/>
   
-  <image x="39%" y="91%" width="20" height="20" href="icons/steps.png"/>
+  <image opacity=".85" x="39%" y="91%" width="20" height="20" href="icons/steps.png"/>
   <text id="step-counter" x="$" y="91%+17" class="metrics">0</text>
 </svg>
