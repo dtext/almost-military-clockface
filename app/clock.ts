@@ -17,8 +17,8 @@ function localizedMonthName(num: number) {
 
 function localizedDayName(num: number) {
   return gettext([
-    "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"
-  ][num - 1])
+    "sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"
+  ][num])
 }
 
 export class AlmostMilitaryClock {
