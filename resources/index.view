@@ -1,4 +1,6 @@
 <svg viewport-fill="black">
+  <rect id="clicker" x="0" y="0" width="100%" height="100%" pointer-events="visible">
+
   <text id="day" x="50%" y="8%">Monday</text>
 
   <text id="date" x="50%" y="35%">00 Jan 0000</text>

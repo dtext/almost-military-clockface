@@ -22,6 +22,11 @@ clock.addEventListener("tick", (event) => {
   stepSensor.updateSteps()
 })
 
+const clicker = document.getElementById("clicker")
+clicker.addEventListener("click", () => {
+  stepSensor.updateSteps()
+})
+
 const heartRateLabel = document.getElementById("heart-rate")
 const hrm = new HeartRateMonitor(heartRateLabel)
 hrm.turnOn()
