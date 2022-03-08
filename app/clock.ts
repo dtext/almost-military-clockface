@@ -30,10 +30,10 @@ export class AlmostMilitaryClock {
 
   private getTimeString = (hours: number, minutes: number): string => {
     if (hours < 0 || hours > 23) {
-      return "err 0 < hours < 32"
+      return "err 0 < hours < 24"
     }
     if (minutes < 0 || minutes > 59) {
-      return "err 0 < month < 12"
+      return "err 0 < minutes < 60"
     }
     const hourString = padWithZero(hours)
     const minuteString = padWithZero(minutes)
